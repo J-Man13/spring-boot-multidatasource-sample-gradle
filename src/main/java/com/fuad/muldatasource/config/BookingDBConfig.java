@@ -32,6 +32,7 @@ public class BookingDBConfig {
         return DataSourceBuilder.create().build();
     }
 
+    @Primary
     @Bean
     public LocalContainerEntityManagerFactoryBean bookingDbLocalContainerEntityManagerFactoryBean() {
         LocalContainerEntityManagerFactoryBean em = new LocalContainerEntityManagerFactoryBean();
