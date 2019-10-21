@@ -1,0 +1,26 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+
+booking-conf:
+  datasource:
+    driverClassName: org.h2.Driver
+    jdbcUrl: jdbc:h2:mem:booking
+    username: book
+    password:
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+      show-sql : true
+
+users-conf:
+  datasource:
+    driverClassName: org.h2.Driver
+    jdbcUrl: jdbc:h2:mem:users
+    username: user
+    password:
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+      show-sql : true
